@@ -67,6 +67,26 @@
 		?>
 
 		<?php echo morning_time_lite_content_navigation('postnav'); ?>
+		
+		<div class="post-actions">
+			<span class="post-date">
+				<i class="fa fa-calendar"></i>
+				<a href="<?php the_permalink(); ?>">
+					<time class="post-date" datetime="<?php echo get_the_date( 'c' ) ?>" itemprop="datePublished"><?php morning_time_lite_get_date(); ?></time><!-- /.post-date -->
+				</a>
+			</span>
+			<span class="post-categorie">
+				<i class="fa fa-folder-open"></i> 
+				<?php the_category(', '); ?>
+			</span>
+			<?php if ( get_the_tag_list( '', ', ' ) ) { ?>
+				<span class="tags"><i class="fa fa-tags"></i> <?php echo get_the_tag_list('',', ',''); ?></span>
+			<?php } ?>
+			<span class="post-edit">
+				<i class="fa fa-pencil"></i>
+				<?php edit_post_link( $link, $before, $after, $id ); ?> 
+			</span>
+		</div><!-- /.post-actions -->
 	</article><!-- /.post -->
 
 <?php } else { ?>

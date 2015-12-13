@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
 	});
 
 	// Wow
-	new WOW().init();
+	// new WOW().init();
 
 	// Post Sliders
 	jQuery('.post-slider').flexslider({

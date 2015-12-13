@@ -6177,6 +6177,15 @@ h1, h2, h3, h4 {
     line-height: normal; }
   .header .top-bar-section li {
     background: transparent; }
+  .header .top-bar-section li.has-dropdown{
+  padding-right: 20px; }
+  .header .top-bar-section li.has-dropdown:after{
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 0px; }
   .header .top-bar-section a {
     text-transform: uppercase; }
   .header .top-bar-section > ul > li + li {
@@ -6217,15 +6226,15 @@ h1, h2, h3, h4 {
   .header .top-bar-section .dropdown li .fa {
     display: block; }
   .header .top-bar-section > ul > li > .dropdown {
-    top: 82px; }
-  .header .top-bar-section > ul > .has-dropdown:hover:after {
+    top: 85px; }
+  .header .top-bar-section > ul > .has-dropdown:hover:before {
     content: '';
     position: absolute;
     z-index: 100;
     left: 0;
     top: 0px;
-    width: 60px;
-    height: 82px;
+    width: 100%;
+    height: 85px;
     border-bottom: 3px solid #d95204; }
   .header .top-bar-section > ul > .has-dropdown:hover > a {
     position: relative;
@@ -7647,7 +7656,7 @@ pre {
   margin-bottom: -30px;
   margin-top: -30px; }
 .format-video .post-video p {
-  margin: 40px 60px;
+  margin: 40px 0px;
   color: #7b7b7b; }
 .format-video .post-video {
   margin-bottom: 40px; }
@@ -7655,7 +7664,8 @@ pre {
 /* Post Format image */
 .post-image {
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding: 0 60px; }
 
 .post-image img {
   width: 100%;
@@ -12816,3 +12826,16 @@ slideOutUp
     top: 5px;
 }
 
+.ngg-widget, .ngg-widget-slideshow {
+padding-top: 0 !important;
+position: relative;
+}
+
+.widget.widget_fbw_id{
+  padding: 0;
+}
+.widget.widget-easy-twitter-feed-widget-kamn{
+  padding: 20px;
+}
+.widget.widget_search{ padding: 0; }
+.widget.widget_search input{ background: white; border: white; padding-left: 20px; margin-top: 0; }

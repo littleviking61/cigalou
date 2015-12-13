@@ -17,7 +17,6 @@
 						<?php get_template_part('content', 'page' ); ?>
 					</div><!-- /.content -->
 
-
 						<section class="section-comments">
 							<div class="row">
 								<div class="columns small-12">
@@ -32,7 +31,7 @@
 
 					<div class="columns large-4">
 						<div class="sidebar">
-							<?php get_sidebar('page'); ?>
+							<?php get_sidebar(); ?>
 						</div><!-- /.sidebar -->
 					</div><!-- /.columns large-4 -->
 

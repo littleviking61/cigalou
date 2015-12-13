@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="columns large-6">
 					<p class="copyright">
-						<?php if ( get_theme_mod('wplook_copy') ){ echo esc_html(get_theme_mod('wplook_copy') ); } ?> <?php _e('Designed by', 'morningtime-lite'); ?> <a href="https://wplook.com/" title="<?php _e('Morning Time Lite', 'morningtime-lite'); ?>">WPlook Studio</a>
+						<?php if ( get_theme_mod('wplook_copy') ){ echo esc_html(get_theme_mod('wplook_copy') ); } ?> <?php _e('Designed by', 'morningtime-lite'); ?> <a href="http://nuagegraphik.com/" title="Nuagegraphik - Baptiste Régné">Nuagegraphik</a> and WPlook Studio
 					</p><!-- /.copyright -->
 				</div><!-- /.columns large-6 -->
 

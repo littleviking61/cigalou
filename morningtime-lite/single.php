@@ -27,16 +27,17 @@
 					<?php endif; ?>
 				</div><!-- /.content -->
 
-					<section class="section-comments">
-						<div class="row">
-							<div class="columns small-12">
+				<section class="section-comments">
+					<div class="row">
+						<div class="columns small-12">
+							<?php comments_template( '', true ); ?>
 
-								<?php comments_template( '', true ); ?>
+						</div><!-- /.columns small-12 -->
+					</div><!-- /.row -->
+				</section><!-- /.section-comments -->
 
-							</div><!-- /.columns small-12 -->
-						</div><!-- /.row -->
-					</section><!-- /.section-comments -->
-<?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
+				<?php if ( function_exists( "get_yuzo_related_posts" ) ) { get_yuzo_related_posts(); } ?>
+
 			</div><!-- /.columns large-8 -->
 
 			<div class="columns large-4">
