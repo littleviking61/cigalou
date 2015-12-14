@@ -34,12 +34,20 @@
 					if ($cat_array) :
 					  foreach($cat_array as $cat)  { ?>
 							<h3><?= get_cat_name( $cat ) ?></h3>
-					  	<?php $args = array( 'posts_per_page' => 3, 'offset'=> 1, 'category' => $cat );
+					  	<?php $args = array( 'posts_per_page' => 3, 'category' => $cat );
 
 					  	$myposts = get_posts( $args );
 					  	foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 					  		<li>
-					  			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					  			<a href="<?php the_permalink(); ?>">
+						  			<?php if ( has_post_thumbnail() ) { ?>
+						  				<div class="post-image">
+						  					<?php the_post_thumbnail( 'thumbnail'); ?>
+						  				</div><!-- /.post-image -->
+						  			<?php } ?>
+					  				<h2><?php the_title(); ?></h2>
+					  				<p><?php the_excerpt(); ?></p>
+					  			</a>
 					  		</li>
 					  	<?php endforeach; ?>
 					  	<hr>

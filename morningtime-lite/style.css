@@ -6666,7 +6666,14 @@ body {
 /*  Footer Sections  */
 .footer-section {
   position: relative;
-  padding: 51px 0 34px; }
+  padding: 40px 0 0 }
+
+  .footer-section.widget ul{
+    border-top: none;}
+  .footer-section.widget ul > li{
+    border-bottom: none;}
+  .footer-section.widget ul > li > a{
+    padding: 0;}
   .footer-section-alt:before {
     content: '';
     position: absolute;
@@ -6745,7 +6752,9 @@ body {
     vertical-align: top;
     margin: 0 9px; }
  }
+.footer-section{
 
+}
 /* ------------------------------------------------------------ *\
 	Buttons
 \* ------------------------------------------------------------ */
@@ -12837,5 +12846,9 @@ position: relative;
 .widget.widget-easy-twitter-feed-widget-kamn{
   padding: 20px;
 }
-.widget.widget_search{ padding: 0; }
-.widget.widget_search input{ background: white; border: white; padding-left: 20px; margin-top: 0; }
+.sidebar .widget_search{ padding: 0; }
+.sidebar .widget_search input{ background: white; border: white; padding-left: 20px; margin-top: 0; }
+
+.cycloneslider-thumbnails > ul{
+  border-top: none;
+}
