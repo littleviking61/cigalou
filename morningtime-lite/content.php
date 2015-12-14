@@ -133,7 +133,7 @@
 				<?php } ?>
 				<span class="post-edit">
 					<i class="fa fa-pencil"></i>
-					<?php edit_post_link( $link, $before, $after, $id ); ?> 
+					<?php edit_post_link(); ?> 
 				</span>
 			</div><!-- /.post-actions -->
 		</div><!-- /.post-body -->

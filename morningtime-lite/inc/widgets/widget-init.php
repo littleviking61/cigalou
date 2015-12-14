@@ -86,6 +86,40 @@ function wplook_widgets_init() {
 		'after_title' => '</h3></div>'
 	) );
 
+	/*-----------------------------------------------------------
+		Home Widget area
+	-----------------------------------------------------------*/
+
+	register_sidebar( array(
+		'name' => __( 'First home Widget Area', 'morningtime-lite' ),
+		'id' => 'h1-widgets',
+		'description' => __( 'The first home widget area', 'morningtime-lite' ),
+		'before_widget' => '<section id="%1$s" class="widget home-widget-section %2$s">',
+		'after_widget' => "</section>",
+		'before_title' => '<div class="home-widget-section-head"><h3 class="home-widget-section-title">',
+		'after_title' => '</h3></div>'
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Second home Widget Area', 'morningtime-lite' ),
+		'id' => 'h2-widgets',
+		'description' => __( 'The first home widget area', 'morningtime-lite' ),
+		'before_widget' => '<section id="%1$s" class="widget home-widget-section %2$s">',
+		'after_widget' => "</section>",
+		'before_title' => '<div class="home-widget-section-head"><h3 class="home-widget-section-title">',
+		'after_title' => '</h3></div>'
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Third home Widget Area', 'morningtime-lite' ),
+		'id' => 'h3-widgets',
+		'description' => __( 'The first home widget area', 'morningtime-lite' ),
+		'before_widget' => '<section id="%1$s" class="widget home-widget-section %2$s">',
+		'after_widget' => "</section>",
+		'before_title' => '<div class="home-widget-section-head"><h3 class="home-widget-section-title">',
+		'after_title' => '</h3></div>'
+	) );
+
 }
 /** Register sidebars */
 add_action( 'widgets_init', 'wplook_widgets_init' );

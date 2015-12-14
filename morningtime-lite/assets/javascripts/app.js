@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 	doc.foundation();
 
 	// Navigation Submenu Icons
-	jQuery('.top-bar-section .has-dropdown').append('<i class="fa fa-angle-right"></i>')
+	// jQuery('.top-bar-section .has-dropdown').append('<i class="fa fa-angle-right"></i>')
 
 	// Fullscreener
 	jQuery('.fullscreener img').fullscreener();
