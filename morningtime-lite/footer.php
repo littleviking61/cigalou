@@ -35,13 +35,15 @@
 
 		<div class="footer-bar">
 			<div class="row">
-				<div class="columns large-6">
+				<div class="columns large-8">
 					<p class="copyright">
-						<?php if ( get_theme_mod('wplook_copy') ){ echo esc_html(get_theme_mod('wplook_copy') ); } ?> <?php _e('Designed by', 'morningtime-lite'); ?> <a href="http://nuagegraphik.com/" title="Nuagegraphik - Baptiste Régné">Nuagegraphik</a> and WPlook Studio
+						 Dessin de <a href="botan-a-becane.fr">Botan</a> - 
+						 <?php _e('Thème modifié par ', 'morningtime-lite'); ?> <a href="http://nuagegraphik.com/" title="Nuagegraphik - Baptiste Régné">Nuagegraphik</a> alias <a href="laventurierviking.fr">L'aventurier viking</a>
 					</p><!-- /.copyright -->
 				</div><!-- /.columns large-6 -->
 
-				<div class="columns large-6">
+				<div class="columns large-4">
+					<?= bloginfo('name'). '©' . date('Y') ?>
 					<?php
 						if ( has_nav_menu( 'footernav' ) ) { ?>
 							<nav class="footer-nav right">

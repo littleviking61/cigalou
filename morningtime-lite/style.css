@@ -4517,6 +4517,8 @@ meta.foundation-mq-topbar {
   left: 0;
   position: relative;
   width: auto;
+  background-color: white;
+  padding: 0 20px;
   transition: left 300ms ease-out; }
   .top-bar-section ul {
     padding: 0;
@@ -6172,7 +6174,7 @@ h1, h2, h3, h4 {
     float: left;
     margin: 23px 0 0 25px;
     font-size: 13px;
-    font-weight: 300;
+    /*font-weight: 300;*/
     text-transform: uppercase;
     line-height: normal; }
   .header .top-bar-section li {
@@ -6755,8 +6757,8 @@ body {
     vertical-align: top;
     margin: 0 9px; }
  }
-.footer-section{
-
+.footer-section .menu .social{
+  display: none;
 }
 /* ------------------------------------------------------------ *\
 	Buttons
@@ -12866,9 +12868,12 @@ position: relative;
   margin: 0;
   height: 150px;
   overflow: hidden; }
+.post-home:hover h2, .post-home:hover h4{
+  color: #d95204; }
 .post-home.post-medium{
   padding: 20px;
-  height: 340px; }
+  height: 340px;
+  margin-bottom: 40px; }
 .post-home.post-small{
   padding: 10px;
   margin-bottom: 40px; }
@@ -12923,3 +12928,18 @@ position: relative;
   height: 1px;
   margin: 16px 0 22px;
   background: #d95204; }
+header.header{
+  background-color: white;
+  background-image: url('assets/images/logo.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain; }
+#site-title a{
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+  padding: 0 10px; }
+#site-title small{
+  background-color: white;
+  padding: 15px 10px;
+    margin: 0; }

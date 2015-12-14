@@ -20,7 +20,7 @@
 
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="post-image">
-				<?php the_post_thumbnail('morning-time-lite-featured-image'); ?>
+				<?php the_post_thumbnail('large'); ?>
 			</div><!-- /.post-image -->
 		<?php } ?>
 

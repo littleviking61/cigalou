@@ -24,7 +24,7 @@
 
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="post-image">
-				<?php the_post_thumbnail('morning-time-lite-featured-image'); ?>
+				<?php the_post_thumbnail('large'); ?>
 
 				<?php  the_content( sprintf(
 						__( 'Continue reading %s', 'morningtime-lite' ), the_title( '<span class="screen-reader-text">', '</span>', false )
