@@ -14,23 +14,23 @@ jQuery(document).ready(function() {
 	jQuery('.fullscreener img').fullscreener();
 
 	// Home Slider
-	jQuery('.slider-home .slide').each(function() {
-		var slideHeight = jQuery(this).find('.slide-image img').attr('height');
-		jQuery(this).height(slideHeight);
-		jQuery(this).find('.slide-body .columns').height(slideHeight);
-	});
-	jQuery('.slider-home').flexslider({
-		animation: 'slide',
-		prevText: '<i class="fa fa-angle-left"></i>',
-		nextText: '<i class="fa fa-angle-right"></i>',
-		pauseOnAction: true,
-		pauseOnHover: true,
-		//smoothHeight: true,
-		controlNav: false,
-		start: function(slider) {
-			jQuery('.slider-home').removeClass('loading');
-		}
-	});
+	// jQuery('.slider-home .slide').each(function() {
+	// 	var slideHeight = jQuery(this).find('.slide-image img').attr('height');
+	// 	jQuery(this).height(slideHeight);
+	// 	jQuery(this).find('.slide-body .columns').height(slideHeight);
+	// });
+	// jQuery('.slider-home').flexslider({
+	// 	animation: 'slide',
+	// 	prevText: '<i class="fa fa-angle-left"></i>',
+	// 	nextText: '<i class="fa fa-angle-right"></i>',
+	// 	pauseOnAction: true,
+	// 	pauseOnHover: true,
+	// 	//smoothHeight: true,
+	// 	controlNav: false,
+	// 	start: function(slider) {
+	// 		jQuery('.slider-home').removeClass('loading');
+	// 	}
+	// });
 
 	// Wow
 	// new WOW().init();

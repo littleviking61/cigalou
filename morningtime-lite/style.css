@@ -7398,7 +7398,7 @@ html[xmlns] .flexslider .slides {
   text-align: left;
   padding: 40px 60px;
   /*border: white thin solid;*/
-  background-color: #f1f1f1;
+  background-color: #e8e8e8;
   color: rgba(51, 51, 51, 0.701961);
 }
 .post-actions a{
@@ -7442,9 +7442,12 @@ html[xmlns] .flexslider .slides {
 .post-foot .socials li {
   padding-top: 0; }
 
+.list-authors{
+  padding: 40px 0 20px; 
+}
 .post-author-box {
-  background: #efefef;
-  padding: 30px 60px 49px; }
+  /*background: #efefef;*/
+  padding: 10px 60px 20px; }
 
 .post-author-box-image {
   float: left;
@@ -7465,6 +7468,10 @@ html[xmlns] .flexslider .slides {
 .post-author-box-content p {
   font-size: 13.5px;
   line-height: 1.5; }
+
+.post-author-box.sep{
+  padding: 0 199px;
+}
 
 .post-nav {
   padding: 40px 60px;
@@ -12866,13 +12873,13 @@ position: relative;
   display: block;
   padding: 0;
   margin: 0;
-  height: 150px;
+  min-height: 150px;
   overflow: hidden; }
 .post-home:hover h2, .post-home:hover h4{
   color: #d95204; }
 .post-home.post-medium{
   padding: 20px;
-  height: 340px;
+  min-height: 340px;
   margin-bottom: 40px; }
 .post-home.post-small{
   padding: 10px;
@@ -12894,7 +12901,7 @@ position: relative;
   max-width: 300px;
   overflow: hidden;
   margin-left: 20px;
-  margin-bottom: 300px; }
+  margin-bottom: 0px; }
 .post-home.post-small .post-image{
  max-width: 130px; margin-right: 10px; margin-left: 0; float: left; }
 .post-home .post-image img{

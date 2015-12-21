@@ -13,6 +13,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="google-site-verification" content="r2FMTgPDpCTgw1-gsID3pZx36rpm_d17El5w5OV_ZBY" />
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -81,7 +82,3 @@
 			</div><!-- /.columns medium-12 -->
 		</div><!-- /.row -->
 	</header><!-- /.header -->
-
-	<?php if ( is_front_page()  ){
-		get_template_part( 'inc', 'slider' );
-	}  ?>

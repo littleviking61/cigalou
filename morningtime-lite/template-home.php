@@ -36,7 +36,7 @@
 					  foreach($cat_array as $cat)  { ?>
 							<div class="row">
 
-								<h3 class="home-categorie"><?= get_cat_name( $cat ) ?></h3>
+								<a href="<?= get_category_link( $cat ); ?>"><h3 class="home-categorie"><?= get_cat_name( $cat ) ?></h3></a>
 						  	<?php $args = array( 'posts_per_page' => 3, 'category' => $cat );
 
 						  	$myposts = get_posts( $args );
@@ -89,8 +89,8 @@
 
 			</div><!-- /.columns large-8 -->
 
+			<h3 class="home-categorie">Aimez moi, suivez moi, regardez moi !</h3>
 			<div class="columns large-12 home-social">
-				<h3 class="home-categorie">Aimez moi, suivez moi, regardez moi !</h3>
 				
 				<div class="row">
 					<div class="columns large-4">
