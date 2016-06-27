@@ -4435,6 +4435,7 @@ meta.foundation-mq-topbar {
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
+
     list-style: none; }
   .top-bar .row {
     max-width: none; }
@@ -4521,10 +4522,11 @@ meta.foundation-mq-topbar {
   position: relative;
   width: auto;
   background-color: white;
-  padding: 0 20px;
+  padding: 0;
   transition: left 300ms ease-out;}
   .top-bar-section ul {
     padding: 0;
+    padding-right: 10px;
     width: 100%;
     height: auto;
     display: block;
@@ -6194,7 +6196,7 @@ h1, h2, h3, h4 {
   .header .top-bar-section a {
     text-transform: uppercase; }
   .header .top-bar-section > ul > li + li {
-    margin-left: 22px; }
+    margin-left: 16px; }
   .header .top-bar-section li:not(.has-form) a:not(.button) {
     background: transparent;
     color: #222222;
@@ -6350,7 +6352,7 @@ h1, h2, h3, h4 {
       display: inline-block;
       vertical-align: top; }
 
-    
+
 
 
  }
