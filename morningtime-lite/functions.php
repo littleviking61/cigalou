@@ -79,6 +79,7 @@ if ( ! function_exists( 'morning_time_lite_setup' ) ) {
 				array(
 					'primary' => __( 'Main Menu', 'morningtime-lite' ),
 					'social' => __( 'Social Menu', 'morningtime-lite' ),
+					'cat' => __( 'Category Menu', 'morningtime-lite' ),
 					'footernav' => __( 'Footer Menu', 'morningtime-lite' ),
 				)
 			);

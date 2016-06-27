@@ -81,4 +81,26 @@
 				</nav>
 			</div><!-- /.columns medium-12 -->
 		</div><!-- /.row -->
+
+		<div class="row categories">
+			<div class="columns medium-12">
+
+				<!-- <h4><?= __('Choisis ton style', 'morningtime') ?></h4> -->
+
+				<?php if ( has_nav_menu( 'cat' ) ) {
+					wp_nav_menu( array(
+						'theme_location' => 'cat',
+						'container' => false,
+						'container_class' => '',
+						'container_id' => '',
+						'menu_class' => 'right',
+						'menu_id' => '',
+						'walker' => new morning_time_lite_Page_Navigation_Walker(),
+						'depth' => '4'
+						)
+					);
+				} ?>
+			</div>
+		</div>
+
 	</header><!-- /.header -->
